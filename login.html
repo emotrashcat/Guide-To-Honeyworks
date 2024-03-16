@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width:799px)"/> 
+    <link rel="stylesheet" type="text/css" href="desktop.css" media="screen and (min-width:800px)"/>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Mada' rel='stylesheet'>
+    <script>function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == "" || x == null) {
+          alert("Must be filled out");
+          return false;
+        }
+      }
+    </script>
+    <title> Login </title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="icon" href="home.html">Dropdown Menu</a>
+        <a href="home.html">Home</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#forums">Forums</a>
+        <a href="#more">More Resources</a>
+        <a href="help.html">Help</a>
+        <div class="topnav-right">
+            <a class="active" href="login.html">Sign In</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="split left">
+            <div class="centered">
+                <h2 style="color: black">Welcome back!</h2>
+                <img src="Panmy_i'm_still_cool_aren't_i_1.png" alt="Avatar man">
+            </div>
+        </div>
+
+        <div class="split right">
+            <div class="centered">
+                <br>
+                <form name="myForm" action="home.html" onsubmit="validateForm()" method="post" required>
+                    <!-- Username Input -->
+                    <input class="login-input" type="text" placeholder="Username" name="uname" required>
+                    
+                    <!-- Password Input-->
+                    <br>
+                    <input class="login-input" type="password" placeholder="Password" name="pwd" required>
+
+                    <br>
+                    <a href="signup.html" style="font-size: 14px; margin:0;">Forgot Password</a>
+                    
+                    <!-- Remember Me -->
+                    <p>
+                    <label style="font-size:14px; vertical-align: left; color:black;">
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+    
+                    <!-- Login -->
+                    <p>
+                    <button class="button" input type="submit" value="submit" style="font-size: 16px; padding: 10px 20px">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+   
+
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width:799px)"/> 
+    <link rel="stylesheet" type="text/css" href="desktop.css" media="screen and (min-width:800px)"/>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Mada' rel='stylesheet'>
+    <script>function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == "" || x == null) {
+          alert("Must be filled out");
+          return false;
+        }
+      }
+    </script>
+    <title> Login </title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="icon" href="home.html">Dropdown Menu</a>
+        <a href="home.html">Home</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#forums">Forums</a>
+        <a href="#more">More Resources</a>
+        <a href="help.html">Help</a>
+        <div class="topnav-right">
+            <a href="login.html">Sign In</a>
+        </div>
+    </div>
+
+    <div class="page-container">
+        <div id="content-wrap">
+            <div class="container">
+                <div class="split left b">
+                    <div class="centered">
+                        <h2>New Student!</h2>
+                        <img src="Kumamaru_well_aren't_I_cool_1.png" alt="Avatar man">
+                    </div>
+                </div>
+
+                <div class="split right b">
+                    <div class="centered">
+                        <br>
+                        <form name="myForm" action="home.html" onsubmit="validateForm()" method="post" required>
+                            <!-- Username Input -->
+                            <input class="login-input" type="email" placeholder="Email" name="email" required>
+                            
+                            <!-- Username Input -->
+                            <input class="login-input" type="uname" placeholder="Username" name="uname" required>
+                            
+                            <!-- Password Input-->
+                            <br>
+                            <input class="login-input" type="password" placeholder="Password" name="pwd" required>
+
+                            <!-- Login -->
+                            <p>
+                            <button class="button2" input type="submit" value="submit" style="font-size: 16px; padding: 10px 20px;">Register as a NEW STUDENT</button>
+                            <p>
+                            <button class="button2" input type="submit" value="submit" style="font-size: 16px; padding: 10px 20px; background-color:#f8c0ff">Register as an EXISTING FAN</button>
+
+                            <p>
+                            <label style="font-size:16px; vertical-align: left;"> Already have an account? <a href="login.html">Sign In!</a> 
+                            </label></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+   
+
+
+</html>
